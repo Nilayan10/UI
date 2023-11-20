@@ -1,0 +1,68 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+  }
+
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .tablink {
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  .tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+
+  .search {
+    display: flex;
+    width: 370px;
+    height: 40px;
+    padding: 8px var(--spacing-space-200, 16px);
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 9px 8px 8px 9px;
+    border: 1px solid var(--stroke-primary, #E4E4E4);
+    background: var(--background-default, #FFF);
+  }
+
+  .tablink {
+    display: flex;
+    padding: var(--spacing-space-00, 0px);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: var(--spacing-space-00, 0px);
+    margin-bottom: auto;
+  }
+
+  .tabcontent.open {
+    display: flex;
+    position: absolute;
+    height: 48px;
+    padding: var(--spacing-space-150, 12px) 24px;
+    align-items: center;
+    gap: 11px;
+    align-self: stretch;
+    border-radius: var(--spacing-space-150, 12px) var(--spacing-space-00, 0px) var(--spacing-space-00, 0px) var(--spacing-space-00, 0px);
+    border-bottom: 1px solid var(--stroke-primary, #E4E4E4);
+    background: var(--background-raised, #F5F5F5);
+  }
